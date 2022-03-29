@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('author_name', 50)->nullable();
             $table->text('text');
-            $table->bigInteger('parent_id')->unsigned()->index()->default(0);
+            $table->bigInteger('parent_id')->unsigned()->index()->nullable();
             $table->timestamp('created_at')->nullable()->useCurrent();
             $table->timestamp('updated_at')->nullable();
         });

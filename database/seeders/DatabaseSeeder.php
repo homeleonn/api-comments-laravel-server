@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
                 'id' => 1,
                 'author_name' => 'Admin',
                 'text' => $faker->sentence(rand($wordsLengthMin, $wordsLengthMax)),
-                'parent_id' => 0,
+                'parent_id' => null,
             ],
             [
                 'id' => 2,
@@ -55,7 +55,7 @@ class DatabaseSeeder extends Seeder
                 'id' => 5,
                 'author_name' => $faker->name,
                 'text' => $faker->sentence(rand($wordsLengthMin, $wordsLengthMax)),
-                'parent_id' => 0,
+                'parent_id' => null,
             ],
             [
                 'id' => 6,
@@ -67,7 +67,7 @@ class DatabaseSeeder extends Seeder
                 'id' => 10,
                 'author_name' => null,
                 'text' => 'Last one',
-                'parent_id' => 0,
+                'parent_id' => null,
             ],
         ]);
     }
