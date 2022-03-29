@@ -22,10 +22,6 @@ class CommentController extends Controller
 
     public function reply(CommentRequest $request)
     {
-        $request->validate([
-            'parent_id' => 'required|integer|exists:comments,id',
-        ]);
-
         return Comment::create($request->validated());
     }
 
